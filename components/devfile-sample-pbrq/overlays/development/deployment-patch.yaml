@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pbrq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0057-tenant/tkrw-pr712-0075-0057-app/devfile-sample-pbrq@sha256:bdb2ebd58b0e3a10b6bb7ab38bb8e2cb5c66250ac1f18fa5d36617355ef6bd64
+        name: my-nodejs
+        resources: {}
+status: {}
